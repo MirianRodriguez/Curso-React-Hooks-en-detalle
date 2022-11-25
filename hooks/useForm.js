@@ -11,7 +11,7 @@ export const useForm = (initialForm = {}) => {
         })
     }
 
-    const onClickReset = () => {
+    const onResetForm = () => {
         setFormState(initialForm);
     }
 
@@ -19,6 +19,6 @@ export const useForm = (initialForm = {}) => {
     //retorna una variable por cada campo del objeto
     ...formState,
     onInputChange,
-    onClickReset,    
+    onResetForm,    
   }
 }
